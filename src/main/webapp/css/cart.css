@@ -1,0 +1,90 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Books_in_a_shopping_cart_in_a_library_-_8459.jpg/3840px-Books_in_a_shopping_cart_in_a_library_-_8459.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    color: #fff;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Cart container */
+ul {
+    list-style: none;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(100px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    color:white;
+   
+}
+
+/* Cart items */
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    font-size: 18px;
+}
+
+/* Last item no border */
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Checkout button */
+a[href="checkout.jsp"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #111111, #3a3a3a);
+    color:white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+a[href="checkout.jsp"]:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+/* Back to books link */
+a[href="books"] {
+    display: inline-block;
+    margin-top: 15px;
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[href="books"]:hover {
+    text-decoration: underline;
+}
+
+/* Empty cart message */
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
